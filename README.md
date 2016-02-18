@@ -1,3 +1,4 @@
 # UTF8Converter-Multilingual
 <b>Language:</b> Python<br/>
-<b>Description:</b> Program in python to convert Multilingual UTF-16 encoded characters to Multilingual UTF-8 encoded characters, without changing the actual meaning of the character. The program is tested for languages like English, Arabic, Gujurati and Japanese.
+<b>Description:</b> Program in python to convert Multilingual UTF-16 encoded characters to Multilingual UTF-8 encoded characters, without changing the actual meaning of the character. The program is tested for languages like English, Arabic, Gujurati and Japanese.<br/>
+<b>Detail:</b> a Python program which will take a path to an input file (absolute path name) as the first parameter. It will read the file as a binary file, and assume that it contains characters from Unicode's Basic Multilingual Plane (U+0000 to U+FFFF) in UTF-16 encoding (big endian), that is every 2 bytes correspond to one character and directly encode that character's Unicode code point. The program will encode each character in UTF-8 (between 1 and 3 bytes), and write the encoded bytes to a file called utf8encoder_out.txt.
